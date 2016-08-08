@@ -1,0 +1,23 @@
+name: Bunto Tutorial
+url: "http://buntotutorial.tk"
+ga: UA-XXXX
+permalink: pretty
+exclude: [
+  # Folders
+  "bin",
+  "script",
+  "vendor",
+  "spec",
+
+  # Files
+  "*.sublime*",
+  "Gemfile*",
+  "CONTRIBUTING.md",
+  "README.md",
+  "Rakefile",
+  "bower.json",
+  "config.ru"
+]
+baseurl: //buntotutorial.tk
+gems:
+  - jekyll-coffeescript

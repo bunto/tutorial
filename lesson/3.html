@@ -1,0 +1,35 @@
+---
+layout: default
+title: Directory structure
+number: 3
+---
+
+<div class="row">
+  <p>Bunto is, at its core, a text transformation engine. The concept behind the system is this: you give it text written in your favorite markup language, be that Markdown, Textile, or just plain HTML, and it churns that through a layout or a series of layout files. Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more. This is all done through editing text files; the static web site is the final product.</p>
+
+  <p>A basic Bunto site usually looks something like this:</p>
+
+<pre>
+.
+├── _config.yml
+├── _drafts
+|   ├── begin-with-the-crazy-ideas.textile
+|   └── on-simplicity-in-technology.markdown
+├── _includes
+|   ├── footer.html
+|   └── header.html
+├── _layouts
+|   ├── default.html
+|   └── post.html
+├── _posts
+|   ├── 2007-10-29-why-every-programmer-should-play-nethack.textile
+|   └── 2009-04-26-barcamp-boston-4-roundup.textile
+├── _data
+|   └── members.yml
+├── _site
+├── .bunto-metadata
+└── index.html
+</pre>
+
+  <a class="btn btn-lg btn-success" href="{{ site.baseurl}}/lesson/4">On to the next lesson!</a>
+</div>

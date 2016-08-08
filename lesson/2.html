@@ -1,0 +1,39 @@
+---
+layout: default
+title: Basic Usage
+number: 2
+---
+
+<div class="row">
+<p>The Bunto gem makes a bunto executable available to you in your Terminal window. You can use this command in a number of ways:</p>
+
+<pre>
+$ bunto build
+# => The current folder will be generated into ./_site
+
+$ bunto build --destination <destination>
+# => The current folder will be generated into <destination>
+
+$ bunto build --source <source> --destination <destination>
+# => The <source> folder will be generated into <destination>
+
+$ bunto build --watch
+# => The current folder will be generated into ./_site,
+#    watched for changes, and regenerated automatically.
+</pre>
+
+<p>Bunto also comes with a built-in development server that will allow you to preview what the generated site will look like in your browser locally.</p>
+
+<pre>
+$ bunto serve
+# => A development server will run at http://localhost:4000/
+# Auto-regeneration: enabled. Use `--no-watch` to disable.
+
+$ bunto serve --detach
+# => Same as `bunto serve` but will detach from the current terminal.
+#    If you need to kill the server, you can `kill -9 1234` where "1234" is the PID.
+#    If you cannot find the PID, then do, `ps aux | grep bunto` and kill the instance. [Read more](http://unixhelp.ed.ac.uk/shell/jobz5.html).
+</pre>
+
+  <a class="btn btn-lg btn-success" href="{{ site.baseurl}}/lesson/3">On to the next lesson!</a>
+</div>

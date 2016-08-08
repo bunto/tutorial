@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+
+script/bootstrap
+
+# Serve the site with Bunto WAF & SSG
+## DISABLED || bundle exec bunto serve --watch --baseurl= --config=_config.yml,_config.dev.yml
+
+# Serve the site with Jekyll SSG
+bundle exec jekyll serve --watch --baseurl= --config=_config.yml,_config.dev.yml
